@@ -1,0 +1,31 @@
+.form-content{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.form-content label{
+    color: var(--Marine-blue);
+    font-size: .8rem;
+    font-weight: 400;
+}
+.form-content input{
+    padding: .6rem;
+    border-radius: 6px;
+    border:1px solid var(--Cool-gray);
+    color: var(--Marine-blue);
+    font-weight: 500;
+}
+.form-content input:focus{
+    outline: 1px solid var(--Marine-blue);
+}
+
+.labels{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.labels span{
+    color: var(--Strawberry-red);
+    font-size: .8rem;
+    font-weight: 700;
+}

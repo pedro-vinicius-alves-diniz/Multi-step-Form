@@ -1,0 +1,104 @@
+@import url(step-1-info.css);
+@import url(step-2-plan.css);
+@import url(step-3-add.css);
+@import url(step-4-finishing.css);
+@import url(step-5-confirmed.css);
+
+
+main{
+    height: 100%;
+    background-color: var(--Light-gray);
+    padding: 0 1rem;
+
+    position: relative;
+}
+
+section{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -4.6rem;
+
+    background-color: var(--White);
+
+    width: 100%;
+    max-width: 25rem;
+    
+    padding: 1rem;
+    margin: 0 auto;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    transition: 1s;
+    z-index: 50;
+}
+section form{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin: 1rem 0;
+}
+section:not(:first-child){
+    display: none;
+}
+section h1{
+    color: var(--Marine-blue);
+    font-size: 2rem;
+}
+section p{
+    color: var(--Cool-gray);
+}
+
+.btn-next{
+    display: block;
+    margin-left: auto;
+    padding: .6rem;
+
+    background-color: var(--Marine-blue);
+    border: none;
+    border-radius: 8px;
+
+    color: var(--White);
+    font-size: .8rem;
+
+    cursor: pointer;
+
+    transition: background-color .2s ease;
+}
+.btn-next:hover{
+    background-color: var(--Purplish-blue);
+}
+
+.btn-back{
+    cursor: pointer;
+
+    border: none;
+
+    background-color: transparent;
+    color: var(--Cool-gray);
+
+    font-size: .8rem;
+    font-weight: 500;
+
+    transition: color .1s ease-in-out;
+}
+.btn-back:hover{
+    color: var(--Marine-blue);
+}
+
+@media(min-width:768px){
+    main{
+        background-color: var(--White);
+    }
+    section{
+        position: relative;
+        top: 1rem;
+        max-width:none;
+        height: 100%;
+    }
+}
